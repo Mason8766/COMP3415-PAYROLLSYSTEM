@@ -77,6 +77,10 @@ function FindData() {
 FindData()
 
 
+
+let myCar2 = new Employee();
+employeeConstructor(myCar2,"MD#1234567","mason","douglas","it","all","manager","prof","no shifts")
+console.log(myCar2.employeeID)
 function login(){
     var x = document.getElementById('employeeId').value
 
