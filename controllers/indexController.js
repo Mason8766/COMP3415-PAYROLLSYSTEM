@@ -78,10 +78,17 @@ FindData()
 
 
 
-let myCar2 = new Employee();
-employeeConstructor(myCar2,"MD#1234567","mason","douglas","it","all","manager","prof","no shifts")
+let myCar2 = new Employee("MD#1234567","mason","douglas","it","all","manager","prof","no shifts");
+//employeeConstructor(myCar2,"MD#1234567","mason","douglas","it","all","manager","prof","no shifts")
 console.log(myCar2.employeeID)
+
+
+let myCar3 = new Manager("MD#1956712","mason","douglas","it","all","manager","prof","no shifts","Test","Tester");
+console.log(myCar3.employeeID)
+console.log(myCar3.testField)
+
 function login(){
     var x = document.getElementById('employeeId').value
+
 
 }

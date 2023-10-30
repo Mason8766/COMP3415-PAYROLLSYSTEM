@@ -1,4 +1,15 @@
   class Employee {
+      constructor(employeeID, firstName, lastName, department, permissions, status,manager, shifts) {
+
+          this.employeeID = employeeID
+          this.firstName = firstName
+          this.lastName = lastName
+          this.department = department
+          this.permissions = permissions
+          this.status = status
+          this.manager = manager
+          this.shifts = shifts
+      }
 
     get employeeID() {
         return this._employeeID;
@@ -7,11 +18,10 @@
     set employeeID(value) {
 
        // id must have the first name, and lastname initial followed by a hastag, then a 7 digit number
-        if (value.length == 10){
-            if(value.substring(2,3) == "#"){
+        if (value.length == 10 && value.substring(2,3) == "#"){
                 this._employeeID = value;
-            }
         }else {
+
             this._employeeID = "Null"
         }
     }
@@ -43,7 +53,10 @@
     }
 
     set department(value) {
-        this._department = value;
+        if (value == "Human Resources" || value == "IT Department" || value =="Accounting")
+            this._department = value;
+        else
+            this._department = "Null"
     }
 
     get permissions() {
@@ -59,7 +72,10 @@
     }
 
     set status(value) {
-        this._status = value;
+        if (value == "Active" || value =="Suspeneded" || value == "Terminated")
+            this._status = value;
+        else
+            this._status = "Null"
     }
 
     get manager() {
@@ -79,17 +95,17 @@
     }
 };
 
-function employeeConstructor(employee, employeeID, firstName, lastName, department, permissions, status,manager, shifts) {
-
-      employee.employeeID = employeeID
-      employee.firstName = firstName
-      employee.lastName = lastName
-      employee.department = department
-      employee.permissions = permissions
-      employee.status = status
-      employee.manager = manager
-      employee.shifts = shifts
-  }
+// function employeeConstructor(employee, employeeID, firstName, lastName, department, permissions, status,manager, shifts) {
+//
+//       employee.employeeID = employeeID
+//       employee.firstName = firstName
+//       employee.lastName = lastName
+//       employee.department = department
+//       employee.permissions = permissions
+//       employee.status = status
+//       employee.manager = manager
+//       employee.shifts = shifts
+//   }
 
   //id must have the first name, and lastname initial followed by a hastag, then a 7 digit number
   // if (value.length == 10){
