@@ -93,23 +93,23 @@
     set shifts(value) {
         this._shifts = value;
     }
-};
 
-// function employeeConstructor(employee, employeeID, firstName, lastName, department, permissions, status,manager, shifts) {
-//
-//       employee.employeeID = employeeID
-//       employee.firstName = firstName
-//       employee.lastName = lastName
-//       employee.department = department
-//       employee.permissions = permissions
-//       employee.status = status
-//       employee.manager = manager
-//       employee.shifts = shifts
-//   }
+     login() {
 
-  //id must have the first name, and lastname initial followed by a hastag, then a 7 digit number
-  // if (value.length == 10){
-  //     if(value.substring(2,3) == "#"){
-  //         this._employeeID = value;
-  //     }
-  // }
+     }
+     payStub(){
+
+     }
+     getLatestShift(){
+
+     }
+     clockIn(){
+
+     }
+     clockOut(){
+
+     }
+     getPayStubDocument(){
+
+     }
+}

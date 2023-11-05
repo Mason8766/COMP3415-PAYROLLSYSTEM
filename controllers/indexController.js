@@ -79,7 +79,7 @@ FindData()
 
 
 let myCar2 = new Employee("MD#1234567","mason","douglas","it","all","manager","prof","no shifts");
-//employeeConstructor(myCar2,"MD#1234567","mason","douglas","it","all","manager","prof","no shifts")
+//employeeConstructor(myCar2,"MD#12345  67","mason","douglas","it","all","manager","prof","no shifts")
 console.log(myCar2.employeeID)
 
 
